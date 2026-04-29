@@ -2,8 +2,37 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/mouse.h>
 
 / {
+
+    macros {
+        bt_mac0: bt_mac0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&to 0>;
+        };
+        bt_win1: bt_win1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&to 4>;
+        };
+        bt_mac2: bt_mac2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&to 0>;
+        };
+        bt_mac3: bt_mac3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3>, <&to 0>;
+        };
+        bt_mac4: bt_mac4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4>, <&to 0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -14,12 +43,23 @@
                 &mt KP_EQUAL ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
                 &kp CAPS &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P &kp BACKSLASH
                 &mt LSHIFT BACKSPACE &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SEMICOLON &mt RSHFT SINGLE_QUOTE
-                &kp LWIN &mt LALT Z  &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt RALT FSLH &kp RCTRL
+                &kp LGUI &mt LALT Z  &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt RALT FSLH &kp RCTRL
                 &lt 1 ENTER &mt LCTRL TAB &mt LSHIFT BACKSPACE &lt 2 SPACE 
             >;
         };
 
-        symbols_layer { // Layer 1
+        hotkey_layer { // Layer 1
+            display-name = "Hotkeys";
+            bindings = <
+                &none  &none &none &none &none &none   &msc SCROLL_LEFT &msc SCROLL_DOWN  &msc SCROLL_UP     &msc SCROLL_RIGHT   &none    &none
+                &none &none &none &none &kp LC(LA(LG(P))) &none   &none &mkp LCLK  &mmv MOVE_UP     &mkp RCLK   &none &none
+                &none &none &none &none &none &none   &none &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
+                &none &none  &none &kp LA(LG(C)) &kp LA(LG(V)) &kp LA(LG(B))   &none &mkp MCLK  &none &none &none &none
+                &none &none &none &none
+            >;
+        };
+
+        symbols_layer { // Layer 2
             display-name = "Symbols";
             bindings = <
                 &kp ESC  &kp F1 &kp F2 &kp F3 &kp F4 &kp F5   &kp F6 &kp F7  &kp F8     &kp F9   &kp F10    &kp F11
@@ -30,28 +70,48 @@
             >;
         };
 
-        media_layer { // Layer 2
+        media_layer { // Layer 3
             display-name = "Media";
             bindings = <
-                &none  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &out OUT_USB &out OUT_BLE  &none     &none   &none    &none
-                &none &none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &none   &kp PG_UP &kp HOME  &kp UP     &kp END   &none &none
-                &none &kp C_PREV &kp C_NEXT &kp C_PP &kp C_PLAY &none &kp PG_DN   &kp LEFT &kp DOWN  &kp RIGHT &none &none
+                &none  &bt_mac0 &bt_win1 &bt_mac2 &bt_mac3 &bt_mac4   &out OUT_USB &out OUT_BLE  &none     &none   &none    &none
+                &kp LC(LA(LG(N1))) &kp LC(LA(LG(N2))) &kp LC(LA(LG(N3))) &kp LC(LA(LG(N4))) &kp LC(LA(LG(N5))) &none   &none &none  &none     &none   &none &none
+                &none &none &none &none &none &none   &none &kp LC(LEFT)  &none &kp LC(RIGHT) &none &none
                 &none &none  &none &none &none &none   &none &none  &none &none &none &none
                 &bt BT_PRV &bt BT_NXT &none &none
             >;
         };
 
-        extra1 {
-            status = "reserved";
+        win_base_layer { // Layer 4
+            display-name = "Win Base";
+            bindings = <
+                &mt KP_EQUAL ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+                &kp CAPS &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P &kp BACKSLASH
+                &mt LSHIFT BACKSPACE &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SEMICOLON &mt RSHFT SINGLE_QUOTE
+                &kp LCTRL &mt LALT Z  &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt RALT FSLH &kp RCTRL
+                &lt 5 ENTER &mt LGUI TAB &mt LSHIFT BACKSPACE &lt 2 SPACE 
+            >;
         };
 
-        extra2 {
-            status = "reserved";
+        win_hotkey_layer { // Layer 5
+            display-name = "Win Hotkeys";
+            bindings = <
+                &none  &none &none &none &none &none   &msc SCROLL_LEFT &msc SCROLL_DOWN  &msc SCROLL_UP     &msc SCROLL_RIGHT   &none    &none
+                &none &none &none &none &none &none   &none &mkp LCLK  &mmv MOVE_UP     &mkp RCLK   &none &none
+                &none &none &none &none &none &none   &none &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
+                &none &none  &none &none &none &none   &none &mkp MCLK  &none &none &none &none
+                &none &none &none &none
+            >;
         };
     };
 
     combos {
         compatible = "zmk,combos";
+
+        combo_media {
+            timeout-ms = <50>;
+            key-positions = <50 51>; // Both right thumb keys
+            bindings = <&mo 3>;
+        };
 
         combo_clear_bt {
             timeout-ms = <50>; // The keys must be pressed within 50ms of each other
