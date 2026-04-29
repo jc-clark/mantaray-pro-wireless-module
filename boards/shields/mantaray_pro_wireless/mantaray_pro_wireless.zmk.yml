@@ -3,7 +3,7 @@ id: mantaray_pro_wireless
 name: Mantaray_Pro_W
 type: shield
 url: https://github.com/tuxedomakes/mantaray-pro-wireless-module/
-requires: [pro_micro]
+requires: [seeed_xiao]
 features:
   - keys
   - underglow
