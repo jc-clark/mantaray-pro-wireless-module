@@ -43,8 +43,8 @@
                 &mt KP_EQUAL ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
                 &kp CAPS &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P &kp BACKSLASH
                 &mt LSHIFT BACKSPACE &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SEMICOLON &mt RSHFT SINGLE_QUOTE
-                &kp LGUI &mt LALT Z  &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt RCTRL FSLH &kp ENTER
-                &lt 1 ENTER &mt LCTRL TAB &mt LSHIFT BACKSPACE &lt 2 SPACE 
+                &mt LCTRL TAB &mt LALT Z  &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt RCTRL FSLH &kp ENTER
+                &lt 1 ENTER &mt LGUI ESC &mt LSHIFT BACKSPACE &lt 2 SPACE 
             >;
         };
 
@@ -52,7 +52,7 @@
             display-name = "Hotkeys";
             bindings = <
                 &none  &none &none &none &none &none   &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP     &msc SCRL_RIGHT   &none    &none
-                &none &none &none &none &kp LC(LA(LG(P))) &none   &none &mkp LCLK  &mmv MOVE_UP     &mkp RCLK   &none &none
+                &none &none &none &kp LC(LG(O)) &kp LC(LA(LG(P))) &none   &none &mkp LCLK  &mmv MOVE_UP     &mkp RCLK   &none &none
                 &none &none &none &none &none &none   &none &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
                 &none &kp LC(C)  &kp LA(LG(C)) &kp LA(LG(V)) &kp LA(LG(B)) &none   &none &mkp MCLK  &none &none &none &none
                 &none &none &none &none
