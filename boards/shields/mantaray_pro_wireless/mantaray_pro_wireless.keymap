@@ -32,6 +32,20 @@
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 4>, <&to 0>;
         };
+        copy_local: copy_local {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <100>;
+            tap-ms = <30>;
+            bindings = <&kp LA(LS(LG(C)))>, <&kp LA(LG(B))>;
+        };
+        copy_docs: copy_docs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <100>;
+            tap-ms = <30>;
+            bindings = <&kp LA(LS(LG(C)))>, <&kp LA(LG(G))>;
+        };
     };
 
     keymap {
@@ -54,8 +68,8 @@
                 &none  &none &none &none &none &none   &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP     &msc SCRL_RIGHT   &none    &none
                 &none &none &none &kp LC(LG(O)) &kp LC(LA(LG(P))) &none   &none &mkp LCLK  &mmv MOVE_UP     &mkp RCLK   &none &none
                 &none &none &none &none &none &none   &none &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
-                &none &kp LC(C)  &kp LA(LG(C)) &kp LA(LG(V)) &kp LA(LG(B)) &none   &none &mkp MCLK  &none &none &none &none
-                &none &none &none &none
+                &none &kp LC(C)  &kp LA(LG(C)) &kp LA(LG(V)) &copy_local &copy_docs   &none &mkp MCLK  &none &none &none &none
+                &none &none &kp UP &kp DOWN
             >;
         };
 
