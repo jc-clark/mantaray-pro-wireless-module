@@ -74,8 +74,8 @@
             display-name = "Media";
             bindings = <
                 &none  &bt_mac0 &bt_win1 &bt_mac2 &bt_mac3 &bt_mac4   &out OUT_USB &out OUT_BLE  &none     &none   &none    &none
-                &kp LC(LA(LG(N1))) &kp LC(LA(LG(N2))) &kp LC(LA(LG(N3))) &kp LC(LA(LG(N4))) &kp LC(LA(LG(N5))) &none   &none &none  &none     &none   &none &none
-                &none &none &none &none &none &none   &none &kp LC(LEFT)  &none &kp LC(RIGHT) &none &none
+                &none &none &none &none &none &none   &none &none  &none     &none   &none &none
+                &kp LC(LA(LG(N1))) &kp LC(LA(LG(N2))) &kp LC(LA(LG(N3))) &kp LC(LA(LG(N4))) &kp LC(LA(LG(N5))) &none   &none &kp LC(LEFT)  &none &kp LC(RIGHT) &none &none
                 &none &none  &none &none &none &none   &none &none  &none &none &none &none
                 &bt BT_PRV &bt BT_NXT &none &none
             >;
