@@ -35,15 +35,15 @@
         copy_local: copy_local {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <100>;
-            tap-ms = <30>;
+            wait-ms = <500>;
+            tap-ms = <50>;
             bindings = <&kp LA(LS(LG(C)))>, <&kp LA(LG(B))>;
         };
         copy_docs: copy_docs {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <100>;
-            tap-ms = <30>;
+            wait-ms = <500>;
+            tap-ms = <50>;
             bindings = <&kp LA(LS(LG(C)))>, <&kp LA(LG(G))>;
         };
     };
