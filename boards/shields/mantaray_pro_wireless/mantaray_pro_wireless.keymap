@@ -74,7 +74,7 @@
         hotkey_layer { // Layer 1
             display-name = "Hotkeys";
             bindings = <
-                &none  &none &none &none &none &none   &none &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP     &msc SCRL_RIGHT    &none
+                &none  &kp LC(N1) &kp LC(N2) &kp LC(N3) &none &none   &none &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_UP     &msc SCRL_RIGHT    &none
                 &none &none &none &kp LC(LG(O)) &kp LC(LA(LG(P))) &none   &none &mkp LCLK  &mmv MOVE_UP  &mkp RCLK   &none &none
                 &none &mo 6 &mkp LCLK &mkp MCLK &mkp RCLK &none   &none &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
                 &none &kp LC(C)  &kp LA(LG(C)) &kp LA(LG(V)) &copy_local &copy_docs   &none &mkp MCLK  &none &none &none &none
@@ -125,7 +125,6 @@
                 &none &none &none &none
             >;
         };
-    };
 
         fast_mouse_layer { // Layer 6
             display-name = "Fast Mouse";
