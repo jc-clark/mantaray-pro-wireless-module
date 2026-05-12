@@ -6,6 +6,20 @@
 
 #include "mantaray_pro_wireless.dtsi"
 
+/ {
+    vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+        io-channels = <&adc 7>;
+        output-ohms = <499000>;
+        full-ohms = <(1000000 + 499000)>;
+        power-gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
+    };
+
+    chosen {
+        zmk,battery = &vbatt;
+    };
+};
+
 &pinctrl {
     spi2_default: spi2_default {
         group1 {
