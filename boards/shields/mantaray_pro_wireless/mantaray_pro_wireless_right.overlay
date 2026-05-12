@@ -6,6 +6,20 @@
 
 #include "mantaray_pro_wireless.dtsi"
 
+/ {
+    vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+        io-channels = <&adc 7>;
+        output-ohms = <499000>;
+        full-ohms = <(1000000 + 499000)>;
+        power-gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
+    };
+
+    chosen {
+        zmk,battery = &vbatt;
+    };
+};
+
 &default_transform {
     col-offset = <6>;
 };
@@ -34,8 +48,4 @@ nice_view_spi: &spi2 {
     pinctrl-1 = <&spi2_sleep>;
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio1 14 GPIO_ACTIVE_HIGH>;
-};
-
-&default_transform { // Offset of 3 because the left side has 3 columns
-    col-offset = <6>;
 };
