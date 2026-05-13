@@ -32,12 +32,12 @@
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
-⌃⌘O   - Open Liquid reusable and variable (VS Code)
-⌃⌥⌘P  - goer: Open in localhost:4000 (VS Code)
-⌥⌘C   - Clipboard history (Alfred)
-⌥⌘V   - Create Liquid reusable from relative path
-LOCAL - Macro: Copy Relative Path → convert to localhost:4000 URL
-DOCS  - Macro: Copy Relative Path → convert to docs.github.com URL
+* `⌃⌘O`   - Open Liquid reusable and variable (VS Code)
+* `⌃⌥⌘P`  - goer: Open in localhost:4000 (VS Code)
+* `⌥⌘C`   - Clipboard history (Alfred)
+* `⌥⌘V`   - Create Liquid reusable from relative path
+* `LOCAL` - Macro: Copy Relative Path → convert to localhost:4000 URL
+* `DOCS`  - Macro: Copy Relative Path → convert to docs.github.com URL
 
 ## Layer 2: Symbols & Numpad (hold right outer thumb)
 
