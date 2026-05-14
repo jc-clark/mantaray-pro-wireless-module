@@ -4,40 +4,44 @@
 
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
-│ `/=      │  1   │  2   │  3   │  4   │  5   │   │  6   │  7   │  8   │  9   │  0   │  -   │
+│ `/=      │  1   │  2   │  3   │  4   │  5   │   │  6   │  7   │  8   │  9   │  0   │ -/_  │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ CAPS     │  Q   │  W   │  E   │  R   │  T   │   │  Y   │  U   │  I   │  O   │  P   │  \   │
+│ CAPS     │  Q   │  W   │  E   │  R   │  T   │   │  Y   │  U   │  I   │  O   │  P   │ \/|  │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ ⇧/BKSP   │  A   │  S   │  D   │  F   │  G   │   │  H   │  J   │  K   │  L   │  ;   │ ⇧/'  │
+│ ⇧/BKSP   │  A   │  S   │  D   │  F   │  G   │   │  H   │  J   │  K   │  L   │ ;/:  │ '/"  │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ ⌃/TAB    │⌥/Z   │  X   │  C   │  V   │  B   │   │  N   │  M   │  ,   │  .   │⌃//   │ ENT  │
+│ ⌃/TAB    │⌥/Z   │  X   │  C   │  V   │  B   │   │  N   │  M   │  ,   │  .   │ ⌃//  │ ENT  │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
-                                │L1/ENT│⌘/ESC │   │⇧/BKSP│L2/SPC│
+                                │L1/ENT│⇧/ESC │   │ BKSP │L2/SPC│
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
-## Layer 1: Hotkeys (hold left inner thumb)
+## Layer 1: Mouse/navigation (hold left inner thumb)
 
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
-│          │      │      │      │      │      │   │      │SC ←  │SC ↓  │SC ↑  │SC →  │      │
+│          │ ⌘←   │ ⌥←   │ ⌥→   │ ⌘→   │ ⌘A   │   │      │      │      │      │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │      │      │⌃⌘O   │⌃⌥⌘P  │      │   │      │LCLK  │ M↑   │RCLK  │      │      │
+│          │ ⌘[   │ ⌘Tab │ ⌘`   │ ⌘]   │      │   │SC ←  │SC ↓  │ M↑   │SC ↑  │SC →  │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │      │LCLK  │MCLK  │RCLK  │      │   │      │ M←   │ M↓   │ M→   │      │      │
+│ F11      │      │LCLK  │MCLK  │RCLK  │      │   │  ⌘   │ M←   │ M↓   │ M→   │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │ ⌃C   │⌥⌘C   │⌥⌘V   │LOCAL │DOCS  │   │      │MCLK  │      │      │      │      │
+│          │      │ ⌘X   │ ⌘C   │ ⌘V   │      │   │      │ ⌃←   │ ⌃↓   │ ⌃↑   │ ⌃→   │      │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
-                                │ ▓▓▓  │      │   │  ↓   │  ↑   │
+                                │ ▓▓▓  │      │   │LCLK  │RCLK  │
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
-* `⌃⌘O`   - Open Liquid reusable and variable (VS Code)
-* `⌃⌥⌘P`  - goer: Open in localhost:4000 (VS Code)
-* `⌥⌘C`   - Clipboard history (Alfred)
-* `⌥⌘V`   - Create Liquid reusable from relative path
-* `LOCAL` - Macro: Copy Relative Path → convert to localhost:4000 URL
-* `DOCS`  - Macro: Copy Relative Path → convert to docs.github.com URL
+* `F11` - Show Desktop
+* `⌘←` `⌘→` - Jump to beginning/end of line
+* `⌥←` `⌥→` - Jump word left/right
+* `⌘A` - Select all
+* `⌃←` `⌃→` - Switch desktop space left/right
+* `⌃↓` - App Exposé (show current app windows)
+* `⌘[` `⌘]` - Navigate back/forward (browser, Finder)
+* `⌘Tab` - App Switcher
+* `` ⌘` `` - Cycle windows within current app
+* `⌘X` `⌘C` `⌘V` - Cut/Copy/Paste
 
 ## Layer 2: Symbols & Numpad (hold right outer thumb)
 
@@ -55,25 +59,52 @@
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
-## Layer 3: Media (combo: both right thumbs)
+## Layer 3: Hotkeys (combo: both right thumbs)
 
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
-│          │BT0mac│BT1win│BT2mac│BT3mac│BT4mac│   │ USB  │ BLE  │      │      │      │      │
+│          │BT0mac│BT1win│BT2mac│BT3mac│BT4mac│   │      │      │      │      │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ Notes    │Slack │ Arc  │VSCode│Alfred│      │   │      │      │      │      │      │      │
+│          │ ^1   │ ^2   │ ^3   │⌃⌘O   │⌃⌥⌘P  │   │      │ MUTE │ VOL- │ VOL+ │PL/PS │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │      │      │      │      │      │   │      │⌃←    │      │⌃→    │      │      │
+│          │ ⌃C   │⌥⌘C   │⌥⌘V   │LOCAL │DOCS  │   │ ⌘K   │ ⌘W   │ ⌘T   │⌘⇧T   │ ⌘F   │ ⌘L   │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │      │      │      │      │      │   │      │      │      │      │      │      │
+│          │      │⌘⇧3   │⌘⇧4   │⌘⇧⌃4  │⌘⇧5   │   │      │⌃⌥←   │⌃⌥↩   │⌃⌥C   │⌃⌥→   │      │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
                                 │BT PRV│BT NXT│   │ ▓▓▓  │ ▓▓▓  │
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
+**Custom hotkeys:**
+
+* `^1` `^2` `^3` - Switch Arc Browser spaces (Ctrl+1/2/3) and switch VS Code tabs
+* `⌃⌘O`   - Open Liquid reusable and variable (VS Code)
+* `⌃⌥⌘P`  - goer: Open in localhost:4000 (VS Code)
+* `⌥⌘C`   - Clipboard history (Alfred)
+* `⌥⌘V`   - Create Liquid reusable from relative path
+* `LOCAL` - Macro: Copy Relative Path → convert to localhost:4000 URL
+* `DOCS`  - Macro: Copy Relative Path → convert to docs.github.com URL
+
+**System hotkeys:**
+
+* `⌃C`    - CTRL C (quit terminal process)
+* `⌘⇧3`  - Screenshot entire screen
+* `⌘⇧4`  - Screenshot selection
+* `⌘⇧⌃4` - Screenshot selection to clipboard
+* `⌘⇧5`  - Screenshot/recording toolbar
+* `MUTE` `VOL-` `VOL+` `PL/PS` - Media controls
+* `⌘W` - Close tab
+* `⌘T` - New tab
+* `⌘⇧T` - Reopen closed tab
+* `⌘F` - Find
+* `⌘L` - Focus address bar
+* `⌃⌥←` `⌃⌥→` - Rectangle: left/right half
+* `⌃⌥↩` - Rectangle: maximize
+* `⌃⌥C` - Rectangle: center
+
 ## Layer 4: Win Base (auto-activates via BT1 macro)
 
-Same as Layer 0, except: **⌘ → CTRL** and **⌃ → ⌘ (Win key)** are swapped. Hotkey layer becomes Layer 5.
+Same as Layer 0, except: **⌘ → CTRL** and **⌃ → ⌘ (Win key)** are swapped. Mouse layer becomes Layer 5.
 
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
@@ -81,31 +112,41 @@ Same as Layer 0, except: **⌘ → CTRL** and **⌃ → ⌘ (Win key)** are swap
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
 │ CAPS     │  Q   │  W   │  E   │  R   │  T   │   │  Y   │  U   │  I   │  O   │  P   │  \   │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ ⇧/BKSP   │  A   │  S   │  D   │  F   │  G   │   │  H   │  J   │  K   │  L   │  ;   │ ⇧/'  │
+│ ⇧/BKSP   │  A   │  S   │  D   │  F   │  G   │   │  H   │  J   │  K   │  L   │  ;   │ '/"  │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
 │ CTRL     │⌥/Z   │  X   │  C   │  V   │  B   │   │  N   │  M   │  ,   │  .   │⌃//   │ ENT  │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
-                                │L5/ENT│⌘/TAB │   │⇧/BKSP│L2/SPC│
+                                │L5/ENT│⇧/TAB │   │ BKSP │L2/SPC│
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
-## Layer 5: Win Hotkeys
+## Layer 5: Win mouse/navigation
 
-Same mouse keys as Layer 1, without macOS-specific hotkeys (⌥⌘C/V/B and ⌃⌥⌘P removed).
+Windows equivalent of Layer 1 with Windows gesture shortcuts.
 
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
-│          │      │      │      │      │      │   │SC ←  │SC ↓  │SC ↑  │SC →  │      │      │
+│          │Home  │ ⌃←   │ ⌃→   │ End  │ ⌃A   │   │      │      │      │      │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │      │      │      │      │      │   │      │LCLK  │ M↑   │RCLK  │      │      │
+│          │Alt←  │AltTab│      │Alt→  │      │   │SC ←  │SC ↓  │ M↑   │SC ↑  │SC →  │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │      │      │      │      │      │   │      │ M←   │ M↓   │ M→   │      │      │
+│ ⊞D       │      │LCLK  │MCLK  │RCLK  │      │   │ CTRL │ M←   │ M↓   │ M→   │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │      │      │      │      │      │   │      │MCLK  │      │      │      │      │
+│          │      │ ⌃X   │ ⌃C   │ ⌃V   │      │   │      │⊞⌃←   │⊞Tab  │      │⊞⌃→   │      │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
-                                │ ▓▓▓  │      │   │      │      │
+                                │ ▓▓▓  │      │   │LCLK  │RCLK  │
                                 └──────┴──────┘   └──────┴──────┘
 ```
+
+* `⊞D` - Show Desktop
+* `Home/End` - Jump to beginning/end of line
+* `⌃←` `⌃→` - Jump word left/right
+* `⌃A` - Select all
+* `⌃X` `⌃C` `⌃V` - Cut/Copy/Paste
+* `⊞⌃←` `⊞⌃→` - Switch virtual desktop left/right
+* `⊞Tab` - Task View (like Mission Control)
+* `Alt←` `Alt→` - Navigate back/forward (browser)
+* `Alt Tab` - App Switcher
 
 ## Combos
 
