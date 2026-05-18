@@ -65,7 +65,7 @@
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
 │          │BT0mac│BT1win│BT2mac│BT3mac│BT4mac│   │      │      │      │      │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │ ^1   │ ^2   │ ^3   │⌃⌘O   │⌃⌥⌘P  │   │      │ MUTE │ VOL- │ VOL+ │PL/PS │      │
+│ ^1       │ ^2   │ ^3   │⌃⌘O   │⌃⌥⌘O  │⌃⌥⌘P  │   │      │ MUTE │ VOL- │ VOL+ │PL/PS │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
 │          │ ⌃C   │⌥⌘C   │⌥⌘V   │LOCAL │DOCS  │   │  ↑   │ ⌘K   │ ⌘W   │ ⌘T   │⌘⇧T   │ ⌘F   │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
@@ -79,6 +79,7 @@
 
 * `^1` `^2` `^3` - Switch Arc Browser spaces (Ctrl+1/2/3) and switch VS Code tabs
 * `⌃⌘O`   - Open Liquid reusable and variable (VS Code)
+* `⌃⌥⌘O`  - goer: Open in production (VS Code)
 * `⌃⌥⌘P`  - goer: Open in localhost:4000 (VS Code)
 * `⌥⌘C`   - Clipboard history (Alfred)
 * `⌥⌘V`   - Create Liquid reusable from relative path
