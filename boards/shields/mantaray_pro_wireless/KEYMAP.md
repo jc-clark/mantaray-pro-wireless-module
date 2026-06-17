@@ -1,12 +1,12 @@
 # Mantaray Pro Wireless Keymap
 
-## Layer 0: Full Colemak Mac base
+## Layer 0: Colemak Mac base
 
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
 │ `/=      │  1   │  2   │  3   │  4   │  5   │   │  6   │  7   │  8   │  9   │  0   │ -/_  │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ CAPS     │  Q   │  W   │  F   │  P   │  G   │   │  J   │  L   │  U   │  Y   │  ;/:  │ \/|  │
+│ CAPS     │  Q   │  W   │  F   │  P   │  G   │   │  J   │  L   │  U   │  Y   │ ;/:  │ \/|  │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
 │ ⇧/BKSP   │  A   │  R   │  S   │  T   │  D   │   │  H   │  N   │  E   │  I   │  O   │ '/"  │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
@@ -16,25 +16,25 @@
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
-**Colemak changes from QWERTY** (position → output):
+**Colemak changes from QWERTY** (position -> output):
 
 ```
-E → F
-R → P
-T → G
-Y → J
-U → L
-I → U
-O → Y
-P → ;
-S → R
-D → S
-F → T
-G → D
-J → H
-K → N
-L → E
-; → I
+E -> F
+R -> P
+T -> G
+Y -> J
+U -> L
+I -> U
+O -> Y
+P -> ;
+S -> R
+D -> S
+F -> T
+G -> D
+J -> H
+K -> N
+L -> E
+; -> I
 ```
 
 ## Layer 1: Mouse/navigation (hold left inner thumb)
@@ -125,7 +125,7 @@ L → E
 * `⌃⌥↩` - Rectangle: maximize
 * `⌃⌥C` - Rectangle: center
 
-## Layer 4: Full Colemak Win base (auto-activates via BT1 macro)
+## Layer 4: Colemak Win base (auto-activates via BT1 macro)
 
 Same as Layer 0, except: **⌘ → CTRL** and **⌃ → ⌘ (Win key)** are swapped. Mouse layer becomes Layer 5.
 
@@ -143,25 +143,25 @@ Same as Layer 0, except: **⌘ → CTRL** and **⌃ → ⌘ (Win key)** are swap
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
-**Colemak changes from QWERTY** (position → output):
+**Colemak changes from QWERTY** (position -> output):
 
 ```
-E → F
-R → P
-T → G
-Y → J
-U → L
-I → U
-O → Y
-P → ;
-S → R
-D → S
-F → T
-G → D
-J → H
-K → N
-L → E
-; → I
+E -> F
+R -> P
+T -> G
+Y -> J
+U -> L
+I -> U
+O -> Y
+P -> ;
+S -> R
+D -> S
+F -> T
+G -> D
+J -> H
+K -> N
+L -> E
+; -> I
 ```
 
 ## Layer 5: Win mouse/navigation

@@ -63,7 +63,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer { // Layer 0 - Full Colemak Mac
+        default_layer { // Layer 0 - Colemak Mac
             display-name = "Colemak Mac";
             bindings = <
                 &mt KP_EQUAL GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
@@ -107,7 +107,7 @@
             >;
         };
 
-        win_base_layer { // Layer 4 - Full Colemak Win
+        win_base_layer { // Layer 4 - Colemak Win
             display-name = "Colemak Win";
             bindings = <
                 &mt KP_EQUAL GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
