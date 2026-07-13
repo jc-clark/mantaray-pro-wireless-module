@@ -1,40 +1,47 @@
 # Mantaray Pro Wireless Keymap
 
-## Layer 0: Colemak Mac base
+## Layer 0: Pine Mac base
 
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
 │ `/=      │  1   │  2   │  3   │  4   │  5   │   │  6   │  7   │  8   │  9   │  0   │ -/_  │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ CAPS     │  Q   │  W   │  F   │  P   │  G   │   │  J   │  L   │  U   │  Y   │ ;/:  │ \/|  │
+│ CAPS     │  Q   │  L   │  C   │  M   │  K   │   │ '/"  │  F   │  U   │  O   │  Y   │ \/|  │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ ⇧/BKSP   │  A   │  R   │  S   │  T   │  D   │   │  H   │  N   │  E   │  I   │  O   │ '/"  │
+│ ⇧/BKSP   │  N   │  R   │  S   │  T   │  W   │   │  P   │  H   │  E   │  A   │  I   │ ;/:  │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ ⌃/TAB    │⌥/Z   │  X   │  C   │  V   │  B   │   │  K   │  M   │ ,/<  │ ./>  │ //?  │ ENT  │
+│ ⌃/TAB    │  J   │  X   │  Z   │  G   │  V   │   │  B   │  D   │ ,/<  │ ./>  │ //?  │ ENT  │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
                                 │L1/ENT│⇧/ESC │   │ BKSP │L2/SPC│
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
-**Colemak changes from QWERTY** (position -> output):
+**Pine changes from QWERTY** (position -> output):
 
 ```
-E -> F
-R -> P
-T -> G
-Y -> J
-U -> L
-I -> U
-O -> Y
-P -> ;
+W -> L
+E -> C
+R -> M
+T -> K
+Y -> '
+U -> F
+A -> N
 S -> R
 D -> S
 F -> T
-G -> D
+G -> W
+H -> P
 J -> H
-K -> N
-L -> E
+K -> E
+L -> A
 ; -> I
+' -> ;
+Z -> J
+C -> Z
+V -> G
+B -> V
+N -> B
+M -> D
 ```
 
 ## Layer 1: Mouse/navigation (hold left inner thumb)
@@ -43,23 +50,25 @@ L -> E
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
 │          │ ⌘←   │ ⌥←   │ ⌥→   │ ⌘→   │ ⌘A   │   │      │  ←   │  ↓   │  ↑   │  →   │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │ ⌘[   │ ⌘Tab │ ⌘`   │ ⌘]   │      │   │SC ←  │SC ↓  │ M↑   │SC ↑  │SC →  │      │
+│  ⌘F      │ ⌘[   │ ⌘Tab │ ⌘`   │ ⌘]   │      │   │SC ←  │SC ↓  │ M↑   │SC ↑  │SC →  │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
 │ F11      │  ⌘S  │LCLK  │MCLK  │RCLK  │      │   │  ⌘   │ M←   │ M↓   │ M→   │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │ ⌘Z   │ ⌘X   │ ⌘C   │ ⌘V   │      │   │      │ ⌃←   │ ⌃↓   │ ⌃↑   │ ⌃→   │      │
+│ ⌘⇧T      │ ⌘Z   │ ⌘X   │ ⌘C   │ ⌘V   │      │   │      │ ⌃←   │ ⌃↓   │ ⌃↑   │ ⌃→   │      │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
                                 │ ▓▓▓  │      │   │LCLK  │RCLK  │
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
-* `F11` - Show D
+* `⌘F` - Find
+* `F11` - Show Desktop
+* `⌘⇧T` - Reopen closed tab
 * `⌘←` `⌘→` - Jump to beginning/end of line
 * `⌥←` `⌥→` - Jump word left/right
 * `⌘A` - Select all
 * `⌃←` `⌃→` - Switch desktop space left/right
 * `⌃↓` - App Exposé (show current app windows)`
-* `⌘[` `⌘]` - Navigate back/forward (browser, Finder)
+    * `⌘[` `⌘]` - Navigate back/forward (browser, Finder)
 * `⌘Tab` - App Switcher
 * `` ⌘` `` - Cycle windows within current app
 * `⌘Z` `⌘X` `⌘C` `⌘V` - Undo/Cut/Copy/Paste
@@ -125,7 +134,7 @@ L -> E
 * `⌃⌥↩` - Rectangle: maximize
 * `⌃⌥C` - Rectangle: center
 
-## Layer 4: Colemak Win base (auto-activates via BT1 macro)
+## Layer 4: Pine Win base
 
 Same as Layer 0, except: **⌘ → CTRL** and **⌃ → ⌘ (Win key)** are swapped. Mouse layer becomes Layer 5.
 
@@ -133,35 +142,42 @@ Same as Layer 0, except: **⌘ → CTRL** and **⌃ → ⌘ (Win key)** are swap
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
 │ `/=      │  1   │  2   │  3   │  4   │  5   │   │  6   │  7   │  8   │  9   │  0   │  -   │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ CAPS     │  Q   │  W   │  F   │  P   │  G   │   │  J   │  L   │  U   │  Y   │  ;   │  \   │
+│ CAPS     │  Q   │  L   │  C   │  M   │  K   │   │ '/"  │  F   │  U   │  O   │  Y   │  \   │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ ⇧/BKSP   │  A   │  R   │  S   │  T   │  D   │   │  H   │  N   │  E   │  I   │  O   │ '/"  │
+│ ⇧/BKSP   │  N   │  R   │  S   │  T   │  W   │   │  P   │  H   │  E   │  A   │  I   │  ;   │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ CTRL     │⌥/Z   │  X   │  C   │  V   │  B   │   │  K   │  M   │ ,/<  │ ./>  │ //?  │ ENT  │
+│ CTRL     │  J   │  X   │  Z   │  G   │  V   │   │  B   │  D   │ ,/<  │ ./>  │ //?  │ ENT  │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
                                 │L5/ENT│⇧/TAB │   │ BKSP │L2/SPC│
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
-**Colemak changes from QWERTY** (position -> output):
+**Pine changes from QWERTY** (position -> output):
 
 ```
-E -> F
-R -> P
-T -> G
-Y -> J
-U -> L
-I -> U
-O -> Y
-P -> ;
+W -> L
+E -> C
+R -> M
+T -> K
+Y -> '
+U -> F
+A -> N
 S -> R
 D -> S
 F -> T
-G -> D
+G -> W
+H -> P
 J -> H
-K -> N
-L -> E
+K -> E
+L -> A
 ; -> I
+' -> ;
+Z -> J
+C -> Z
+V -> G
+B -> V
+N -> B
+M -> D
 ```
 
 ## Layer 5: Win mouse/navigation

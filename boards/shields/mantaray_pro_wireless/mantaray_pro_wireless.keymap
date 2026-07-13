@@ -63,13 +63,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer { // Layer 0 - Colemak Mac
-            display-name = "Colemak Mac";
+        default_layer { // Layer 0 - Pine Mac
+            display-name = "Pine Mac";
             bindings = <
                 &mt KP_EQUAL GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-                &kp CAPS &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMICOLON &kp BACKSLASH
-                &mt LSHIFT BACKSPACE &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E &kp I &kp O &kp SINGLE_QUOTE
-                &mt LCTRL TAB &mt LALT Z  &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH &kp ENTER
+                &kp CAPS &kp Q &kp L &kp C &kp M &kp K   &kp SINGLE_QUOTE &kp F  &kp U     &kp O   &kp Y &kp BACKSLASH
+                &mt LSHIFT BACKSPACE &kp N &kp R &kp S &kp T &kp W   &kp P &kp H  &kp E &kp A &kp I &kp SEMICOLON
+                &mt LCTRL TAB &kp J  &kp X &kp Z &kp G &kp V   &kp B &kp D  &kp COMMA &kp DOT &kp FSLH &kp ENTER
                 &lt 1 ENTER &mt LSHIFT ESC &kp BACKSPACE &lt 2 SPACE 
             >;
         };
@@ -78,9 +78,9 @@
             display-name = "Mouse";
             bindings = <
                 &none  &kp LG(LEFT) &kp LA(LEFT) &kp LA(RIGHT) &kp LG(RIGHT) &kp LG(A)   &none &kp LEFT &kp DOWN  &kp UP     &kp RIGHT    &none
-                &none &kp LG(LBKT) &cmd_tab &kp LG(GRAVE) &kp LG(RBKT) &none   &msc SCRL_LEFT &msc SCRL_DOWN  &mmv MOVE_UP  &msc SCRL_UP   &msc SCRL_RIGHT &none
+
                 &kp F11 &kp LG(S) &mkp LCLK &mkp MCLK &mkp RCLK &none   &kp LGUI &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
-                &none &kp LG(Z)  &kp LG(X) &kp LG(C) &kp LG(V) &none   &none &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP) &kp LC(RIGHT) &none
+                &kp LG(LS(T)) &kp LG(Z)  &kp LG(X) &kp LG(C) &kp LG(V) &none   &none &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP) &kp LC(RIGHT) &none
                 &none &none &mkp LCLK &mkp RCLK
             >;
         };
@@ -107,13 +107,13 @@
             >;
         };
 
-        win_base_layer { // Layer 4 - Colemak Win
-            display-name = "Colemak Win";
+        win_base_layer { // Layer 4 - Pine Win
+            display-name = "Pine Win";
             bindings = <
                 &mt KP_EQUAL GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-                &kp CAPS &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMICOLON &kp BACKSLASH
-                &mt LSHIFT BACKSPACE &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E &kp I &kp O &kp SINGLE_QUOTE
-                &kp LCTRL &mt LALT Z  &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH &kp ENTER
+                &kp CAPS &kp Q &kp L &kp C &kp M &kp K   &kp SINGLE_QUOTE &kp F  &kp U     &kp O   &kp Y &kp BACKSLASH
+                &mt LSHIFT BACKSPACE &kp N &kp R &kp S &kp T &kp W   &kp P &kp H  &kp E &kp A &kp I &kp SEMICOLON
+                &kp LCTRL &kp J  &kp X &kp Z &kp G &kp V   &kp B &kp D  &kp COMMA &kp DOT &kp FSLH &kp ENTER
                 &lt 5 ENTER &mt LSHIFT TAB &kp BACKSPACE &lt 2 SPACE 
             >;
         };
