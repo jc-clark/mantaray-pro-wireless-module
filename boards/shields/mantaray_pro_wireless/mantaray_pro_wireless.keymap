@@ -79,7 +79,7 @@
             bindings = <
                 &none &kp LG(F) &kp LG(A) &kp LG(T) &kp LG(LS(T)) &none   &none &kp LEFT &kp DOWN  &kp UP     &kp RIGHT    &none
                 &none &kp LG(LEFT) &kp LA(LEFT) &kp LA(RIGHT) &kp LG(RIGHT) &none   &msc SCRL_LEFT &msc SCRL_DOWN  &mmv MOVE_UP  &msc SCRL_UP   &msc SCRL_RIGHT &none
-                &none &kp LG(S) &mkp LCLK &mkp MCLK &mkp RCLK &none   &kp LGUI &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
+                &kp LA(LG(C)) &kp LG(S) &mkp LCLK &mkp MCLK &mkp RCLK &none   &kp LGUI &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
                 &cmd_tab &kp LG(Z)  &kp LG(X) &kp LG(C) &kp LG(V) &none   &none &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP) &kp LC(RIGHT) &none
                 &none &none &mkp LCLK &mkp RCLK
             >;
