@@ -25,3 +25,6 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: seeeduino_xiao_ble
     shield: mantaray_pro_wireless_right nice_view
+  # Temporary image for clearing split-keyboard and Bluetooth settings.
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
