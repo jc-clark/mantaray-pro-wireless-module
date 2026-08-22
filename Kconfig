@@ -1,0 +1,9 @@
+config MANTARAY_PROFILE_LAYER_SYNC
+    bool "Automatically switch the base layer to match the active BT profile"
+    default y
+    depends on ZMK_BLE
+    help
+      Keeps the base keymap layer in sync with the active BT profile, so the
+      correct layer (e.g. the Windows layer for the Windows BT profile) is
+      always active immediately after boot/reconnect, not just after a
+      manual layer switch.
