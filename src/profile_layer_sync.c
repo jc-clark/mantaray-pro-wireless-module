@@ -5,6 +5,11 @@
  */
 
 #include <zephyr/kernel.h>
+
+// BT profile management only exists on the split central; the peripheral has no
+// active-profile concept, so this whole file is a no-op there.
+#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+
 #include <zephyr/logging/log.h>
 
 #include <zmk/event_manager.h>
@@ -35,3 +40,5 @@ static int profile_layer_sync_listener(const zmk_event_t *eh) {
 
 ZMK_LISTENER(profile_layer_sync, profile_layer_sync_listener);
 ZMK_SUBSCRIPTION(profile_layer_sync, zmk_ble_active_profile_changed);
+
+#endif
