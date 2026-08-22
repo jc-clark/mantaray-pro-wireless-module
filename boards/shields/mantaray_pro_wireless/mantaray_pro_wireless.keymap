@@ -138,12 +138,14 @@
             timeout-ms = <50>;
             key-positions = <50 51>; // Both right thumb keys
             bindings = <&mo 3>;
+            layers = <0 1 2 3 4 5>; // explicit: must fire on every layer, incl. win_base_layer (4)
         };
 
         combo_clear_bt {
             timeout-ms = <50>; // The keys must be pressed within 50ms of each other
             key-positions = <13 22>; // Use key positions 13 (Q) and 22 (P)
             bindings = <&bt BT_CLR>;
+            layers = <0 1 2 3 4 5>;
             // To make the combo trigger only on hold, uncomment the line below
             require-prior-idle-ms = <200>;
         };
