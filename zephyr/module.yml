@@ -1,6 +1,6 @@
 name: zmk-keyboard-mantaray_pro_wireless
 build:
+  cmake: .
+  kconfig: Kconfig
   settings:
     board_root: .
-    cmake: .
-    kconfig: Kconfig
