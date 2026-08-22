@@ -139,6 +139,7 @@
             key-positions = <50 51>; // Both right thumb keys
             bindings = <&mo 3>;
             layers = <0 1 2 3 4 5>; // explicit: must fire on every layer, incl. win_base_layer (4)
+            slow-release; // only release layer 3 once BOTH thumb keys are up, avoids stuck state after &to jumps
         };
 
         combo_clear_bt {
