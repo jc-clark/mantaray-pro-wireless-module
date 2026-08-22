@@ -69,7 +69,7 @@
                 &mt KP_EQUAL GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
                 &kp CAPS &kp Q &kp L &kp C &kp M &kp K   &kp SINGLE_QUOTE &kp F  &kp U     &kp O   &kp Y &kp BACKSLASH
                 &mt LSHIFT BACKSPACE &kp N &kp R &kp S &kp T &kp W   &kp P &kp H  &kp E &kp A &kp I &kp SEMICOLON
-                &mt LCTRL TAB &kp J  &kp X &kp Z &kp G &kp V   &kp B &kp D  &kp COMMA &kp DOT &kp FSLH &kp ENTER
+                &mt LCTRL TAB &kp J  &kp X &kp Z &kp G &kp V   &kp B &kp D  &kp COMMA &kp DOT &kp FSLH &lt 3 ENTER
                 &lt 1 ENTER &mt LSHIFT ESC &kp BACKSPACE &lt 2 SPACE 
             >;
         };
@@ -113,7 +113,7 @@
                 &mt KP_EQUAL GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
                 &kp CAPS &kp Q &kp L &kp C &kp M &kp K   &kp SINGLE_QUOTE &kp F  &kp U     &kp O   &kp Y &kp BACKSLASH
                 &mt LSHIFT BACKSPACE &kp N &kp R &kp S &kp T &kp W   &kp P &kp H  &kp E &kp A &kp I &kp SEMICOLON
-                &kp LCTRL &kp J  &kp X &kp Z &kp G &kp V   &kp B &kp D  &kp COMMA &kp DOT &kp FSLH &kp ENTER
+                &kp LCTRL &kp J  &kp X &kp Z &kp G &kp V   &kp B &kp D  &kp COMMA &kp DOT &kp FSLH &lt 3 ENTER
                 &lt 5 ENTER &mt LSHIFT TAB &kp BACKSPACE &lt 2 SPACE 
             >;
         };
@@ -133,14 +133,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        combo_media {
-            timeout-ms = <50>;
-            key-positions = <50 51>; // Both right thumb keys
-            bindings = <&mo 3>;
-            layers = <0 1 2 3 4 5>; // explicit: must fire on every layer, incl. win_base_layer (4)
-            slow-release; // only release layer 3 once BOTH thumb keys are up, avoids stuck state after &to jumps
-        };
 
         combo_clear_bt {
             timeout-ms = <50>; // The keys must be pressed within 50ms of each other
