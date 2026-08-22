@@ -37,7 +37,7 @@
         bt_win4: bt_win4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4>, <&to 4>;
+            bindings = <&bt BT_SEL 4>, <&to 3>;
         };
         copy_local: copy_local {
             compatible = "zmk,behavior-macro";
@@ -69,7 +69,7 @@
                 &mt KP_EQUAL GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
                 &kp CAPS &kp Q &kp L &kp C &kp M &kp K   &kp SINGLE_QUOTE &kp F  &kp U     &kp O   &kp Y &kp BACKSLASH
                 &mt LSHIFT BACKSPACE &kp N &kp R &kp S &kp T &kp W   &kp P &kp H  &kp E &kp A &kp I &kp SEMICOLON
-                &mt LCTRL TAB &kp J  &kp X &kp Z &kp G &kp V   &kp B &kp D  &kp COMMA &kp DOT &kp FSLH &lt 3 ENTER
+                &mt LCTRL TAB &kp J  &kp X &kp Z &kp G &kp V   &kp B &kp D  &kp COMMA &kp DOT &kp FSLH &kp ENTER
                 &lt 1 ENTER &mt LSHIFT ESC &kp BACKSPACE &lt 2 SPACE 
             >;
         };
@@ -96,29 +96,18 @@
             >;
         };
 
-        hotkey_layer { // Layer 3
-            display-name = "Hotkeys";
-            bindings = <
-                &none  &bt_mac0 &bt_mac1 &bt_mac2 &bt_mac3 &bt_win4   &none &none  &none     &none   &none    &none
-                &kp LC(N1) &kp LC(N2) &kp LC(N3) &kp LC(LG(O)) &kp LC(LA(LG(O))) &kp LC(LA(LG(P)))   &none &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP &none
-                &none &kp LC(C) &kp LA(LG(C)) &kp LA(LG(V)) &copy_local &copy_docs   &kp UP &kp LG(K)  &kp LG(W) &kp LG(T) &kp LG(LS(T)) &kp LG(F)
-                &none &none  &kp LG(LS(N3)) &kp LG(LS(N4)) &kp LG(LS(LC(N4))) &kp LG(LS(N5))   &kp DOWN &kp LC(LA(LEFT))  &kp LC(LA(RET)) &kp LC(LA(C)) &kp LC(LA(RIGHT)) &kp LG(S)
-                &bt BT_PRV &bt BT_NXT &none &none
-            >;
-        };
-
-        win_base_layer { // Layer 4 - Pine Win
+        win_base_layer { // Layer 3 - Pine Win
             display-name = "Pine Win";
             bindings = <
                 &mt KP_EQUAL GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
                 &kp CAPS &kp Q &kp L &kp C &kp M &kp K   &kp SINGLE_QUOTE &kp F  &kp U     &kp O   &kp Y &kp BACKSLASH
                 &mt LSHIFT BACKSPACE &kp N &kp R &kp S &kp T &kp W   &kp P &kp H  &kp E &kp A &kp I &kp SEMICOLON
-                &kp LCTRL &kp J  &kp X &kp Z &kp G &kp V   &kp B &kp D  &kp COMMA &kp DOT &kp FSLH &lt 3 ENTER
-                &lt 5 ENTER &mt LSHIFT TAB &kp BACKSPACE &lt 2 SPACE 
+                &kp LCTRL &kp J  &kp X &kp Z &kp G &kp V   &kp B &kp D  &kp COMMA &kp DOT &kp FSLH &kp ENTER
+                &lt 4 ENTER &mt LSHIFT TAB &kp BACKSPACE &lt 2 SPACE 
             >;
         };
 
-        win_mouse_layer { // Layer 5
+        win_mouse_layer { // Layer 4
             display-name = "Win Mouse";
             bindings = <
                 &none  &kp LC(F) &kp LC(A) &kp LC(T) &kp LC(LS(T)) &none   &none &kp LEFT &kp DOWN  &kp UP     &kp RIGHT    &none
@@ -129,10 +118,29 @@
             >;
         };
 
+        hotkey_layer { // Layer 5 - must stay the highest-numbered layer so it always wins over win_base_layer (3)
+            display-name = "Hotkeys";
+            bindings = <
+                &none  &bt_mac0 &bt_mac1 &bt_mac2 &bt_mac3 &bt_win4   &none &none  &none     &none   &none    &none
+                &kp LC(N1) &kp LC(N2) &kp LC(N3) &kp LC(LG(O)) &kp LC(LA(LG(O))) &kp LC(LA(LG(P)))   &none &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP &none
+                &none &kp LC(C) &kp LA(LG(C)) &kp LA(LG(V)) &copy_local &copy_docs   &kp UP &kp LG(K)  &kp LG(W) &kp LG(T) &kp LG(LS(T)) &kp LG(F)
+                &none &none  &kp LG(LS(N3)) &kp LG(LS(N4)) &kp LG(LS(LC(N4))) &kp LG(LS(N5))   &kp DOWN &kp LC(LA(LEFT))  &kp LC(LA(RET)) &kp LC(LA(C)) &kp LC(LA(RIGHT)) &kp LG(S)
+                &bt BT_PRV &bt BT_NXT &none &none
+            >;
+        };
+
     };
 
     combos {
         compatible = "zmk,combos";
+
+        combo_media {
+            timeout-ms = <50>;
+            key-positions = <50 51>; // Both right thumb keys
+            bindings = <&mo 5>;
+            layers = <0 1 2 3 4 5>;
+            slow-release;
+        };
 
         combo_clear_bt {
             timeout-ms = <50>; // The keys must be pressed within 50ms of each other
