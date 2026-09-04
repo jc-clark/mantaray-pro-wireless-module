@@ -12,9 +12,18 @@
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
 │ ⌃/TAB    │  J   │  X   │  Z   │  G   │  V   │   │  B   │  D   │ ,/<  │ ./>  │ //?  │ ENT  │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
-                                │L1/ENT│⇧/ESC │   │ BKSP │L2/SPC│
+                                │⌘/ENT │⇧/ESC │   │L1/BSP│L2/SPC│
                                 └──────┴──────┘   └──────┴──────┘
 ```
+
+**The left outer thumb is a real Command key.** Hold it and every ⌘ shortcut works at the
+position where you actually type the letter: ⌘C, ⌘V, ⌘⇧Z, ⌘1–⌘9, ⌘⌫, ⌘+click, all of it.
+Nothing needs to be mapped per-shortcut.
+
+**Bulk backspace:** the right outer thumb is a layer-tap, so a cold press-and-hold engages
+Layer 1 instead of repeating. To hold-delete, **tap once, then tap-and-hold** (`quick-tap-ms`
+is 200ms). Rapid repeated tapping works normally. If you want a plain holdable backspace,
+Layer 2 has one at the right pinky home position.
 
 **Pine changes from QWERTY** (position -> output):
 
@@ -44,35 +53,40 @@ N -> B
 M -> D
 ```
 
-## Layer 1: Mouse/navigation (hold left inner thumb)
+## Layer 1: Navigation (hold right outer thumb)
 
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
-│          │ ⌘F   │ ⌘A   │ ⌘T   │ ⌘⇧T  │      │   │      │  ←   │  ↓   │  ↑   │  →   │      │
+│          │      │      │      │      │      │   │      │      │      │      │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │ ⌘←   │ ⌥←   │ ⌥→   │ ⌘→   │      │   │SC ←  │SC ↓  │ M↑   │SC ↑  │SC →  │      │
+│ ⌥⌘C      │ ⌃⌥←  │ ⌃⌥↩  │ ⌃⌥C  │ ⌃⌥→  │      │   │      │ ⌘←   │ ⌥←   │ ⌥→   │ ⌘→   │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ ⌥⌘C      │  ⌘S  │LCLK  │MCLK  │RCLK  │      │   │  ⌘   │ M←   │ M↓   │ M→   │      │      │
+│ ⇧        │ ⌘Tab │ MUTE │ VOL- │ VOL+ │PL/PS │   │ HOME │  ←   │  ↓   │  ↑   │  →   │ END  │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ ⌘Tab     │ ⌘Z   │ ⌘X   │ ⌘C   │ ⌘V   │      │   │      │ ⌃←   │ ⌃↓   │ ⌃↑   │ ⌃→   │      │
+│ ⌃        │      │      │      │      │      │   │ PGDN │ ⌃←   │ ⌃↓   │ ⌃↑   │ ⌃→   │ PGUP │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
-                                │ ▓▓▓  │      │   │LCLK  │RCLK  │
+                                │  ⌘   │  ⇧   │   │ ▓▓▓  │      │
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
-* `⌘F` - Find
-* `⌘T` - New tab
-* `⌘⇧T` - Reopen closed tab
+Arrows sit on the right home row. ⌘ and ⇧ stay live on the left thumbs and left pinky, so
+`⌘⇧←`, `⌥⇧→`, and friends all work while the layer is held.
+
+* `←` `↓` `↑` `→` - Arrows (right home row)
 * `⌘←` `⌘→` - Jump to beginning/end of line
 * `⌥←` `⌥→` - Jump word left/right
-* `⌘A` - Select all
+* `HOME` `END` `PGUP` `PGDN` - Document navigation
 * `⌃←` `⌃→` - Switch desktop space left/right
-* `⌃↓` - App Exposé (show current app windows)`
+* `⌃↑` - Mission Control
+* `⌃↓` - App Exposé (show current app windows)
 * `⌥⌘C` - Clipboard history (Alfred)
 * `⌘Tab` - App Switcher
-* `⌘Z` `⌘X` `⌘C` `⌘V` - Undo/Cut/Copy/Paste
+* `⌃⌥←` `⌃⌥→` - Rectangle: left/right half
+* `⌃⌥↩` - Rectangle: maximize
+* `⌃⌥C` - Rectangle: center
+* `MUTE` `VOL-` `VOL+` `PL/PS` - Media controls
 
-## Layer 2: Symbols & Numpad (hold right outer thumb)
+## Layer 2: Symbols & Numpad (hold right inner thumb)
 
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
@@ -90,7 +104,7 @@ M -> D
 
 ## Layer 3: Pine Win base
 
-Same as Layer 0, except: **⌘ → CTRL** and **⌃ → ⌘ (Win key)** are swapped. Mouse layer becomes Layer 4.
+Same as Layer 0, except: **⌘ → CTRL** and **⌃ → ⌘ (Win key)** are swapped. Nav layer becomes Layer 4.
 
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
@@ -100,9 +114,9 @@ Same as Layer 0, except: **⌘ → CTRL** and **⌃ → ⌘ (Win key)** are swap
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
 │ ⇧/BKSP   │  N   │  R   │  S   │  T   │  W   │   │  P   │  H   │  E   │  A   │  I   │  ;   │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ CTRL     │  J   │  X   │  Z   │  G   │  V   │   │  B   │  D   │ ,/<  │ ./>  │ //?  │ ENT  │
+│ ⊞/TAB    │  J   │  X   │  Z   │  G   │  V   │   │  B   │  D   │ ,/<  │ ./>  │ //?  │ ENT  │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
-                                │L4/ENT│⇧/TAB │   │ BKSP │L2/SPC│
+                                │⌃/ENT │⇧/TAB │   │L4/BSP│L2/SPC│
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
@@ -134,35 +148,31 @@ N -> B
 M -> D
 ```
 
-## Layer 4: Win mouse/navigation
+## Layer 4: Win navigation
 
-Windows equivalent of Layer 1 with Windows gesture shortcuts.
+Windows equivalent of Layer 1.
 
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
-│          │ ⌃F   │ ⌃A   │ ⌃T   │⌃⇧T  │      │   │      │  ←   │  ↓   │  ↑   │  →   │      │
+│          │      │      │      │      │      │   │      │      │      │      │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │Home  │ ⌃←   │ ⌃→   │ End  │      │   │SC ←  │SC ↓  │ M↑   │SC ↑  │SC →  │      │
+│ ⊞V       │ ⊞←   │ ⊞↑   │ ⊞↓   │ ⊞→   │      │   │      │Home  │ ⌃←   │ ⌃→   │ End  │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ ⊞V       │ ⌃S   │LCLK  │MCLK  │RCLK  │      │   │ CTRL │ M←   │ M↓   │ M→   │      │      │
+│ ⇧        │AltTab│ MUTE │ VOL- │ VOL+ │PL/PS │   │ HOME │  ←   │  ↓   │  ↑   │  →   │ END  │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ AltTab   │ ⌃Z   │ ⌃X   │ ⌃C   │ ⌃V   │      │   │      │⊞⌃←   │⊞Tab  │      │⊞⌃→   │      │
+│ ⌃        │      │ ⊞⇧S  │      │      │      │   │ PGDN │⊞⌃←   │⊞Tab  │      │⊞⌃→   │ PGUP │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
-                                │ ▓▓▓  │      │   │LCLK  │RCLK  │
+                                │  ⌃   │  ⇧   │   │ ▓▓▓  │      │
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
-* `⌃F` - Find
-* `⌃T` - New tab
-* `⌃⇧T` - Reopen closed tab
 * `⊞V` - Clipboard history
+* `⊞←` `⊞↑` `⊞↓` `⊞→` - Snap window
 * `Home/End` - Jump to beginning/end of line
 * `⌃←` `⌃→` - Jump word left/right
-* `⌃A` - Select all
-* `⌃X` `⌃C` `⌃V` - Cut/Copy/Paste
 * `⊞⌃←` `⊞⌃→` - Switch virtual desktop left/right
 * `⊞Tab` - Task View (like Mission Control)
-* `Alt←` `Alt→` - Navigate back/forward (browser)
+* `⊞⇧S` - Snipping tool
 * `Alt Tab` - App Switcher
 
 ## Layer 5: Hotkeys (hold both right thumbs, positions 50+51)
