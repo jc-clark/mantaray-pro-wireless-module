@@ -139,9 +139,9 @@
             bindings = <
                 &none  &bt_mac0 &bt_mac1 &bt_mac2 &bt_mac3 &bt_win4   &none &none  &none     &none   &none    &none
                 &kp LC(N1) &kp LC(N2) &kp LC(N3) &kp LC(LG(O)) &kp LC(LA(LG(O))) &kp LC(LA(LG(P)))   &none &none  &none  &none  &none &none
-                &none &kp LC(C) &none &kp LA(LG(V)) &copy_local &copy_docs   &none &none  &none &none &none &none
-                &none &none  &kp LG(LS(N3)) &kp LG(LS(N4)) &kp LG(LS(LC(N4))) &kp LG(LS(N5))   &none &none  &none &none &none &none
-                &bt BT_PRV &bt BT_NXT &none &none
+                &bt BT_PRV &kp LC(C) &none &kp LA(LG(V)) &copy_local &copy_docs   &none &none  &none &none &none &none
+                &bt BT_NXT &none  &kp LG(LS(N3)) &kp LG(LS(N4)) &kp LG(LS(LC(N4))) &kp LG(LS(N5))   &none &none  &none &none &none &none
+                &none &none &none &none
             >;
         };
 
@@ -176,9 +176,9 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_media {
+        combo_hotkeys {
             timeout-ms = <50>;
-            key-positions = <50 51>; // Both right thumb keys
+            key-positions = <48 49>; // Both left thumb keys, so the layer is reachable while the right hand is on the mouse
             bindings = <&mo 5>;
             layers = <0 1 2 3 4 5>;
             slow-release;

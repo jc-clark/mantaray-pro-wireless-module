@@ -175,10 +175,11 @@ Windows equivalent of Layer 1.
 * `⊞⇧S` - Snipping tool
 * `Alt Tab` - App Switcher
 
-## Layer 5: Hotkeys (hold both right thumbs, positions 50+51)
+## Layer 5: Hotkeys (hold both left thumbs, positions 48+49)
 
-Everything reachable with the real ⌘ key, and everything duplicated on Layer 1, has been
-removed. What is left is only what this layer alone can do, so the right hand is empty.
+Left thumbs so the layer is reachable while the right hand is on the mouse. Everything
+reachable with the real ⌘ key, and everything duplicated on Layer 1, has been removed.
+What is left is only what this layer alone can do, so the right hand is empty.
 
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
@@ -186,11 +187,11 @@ removed. What is left is only what this layer alone can do, so the right hand is
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
 │ ^1       │ ^2   │ ^3   │⌃⌘O   │⌃⌥⌘O  │⌃⌥⌘P  │   │      │      │      │      │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │ ⌃C   │      │⌥⌘V   │LOCAL │DOCS  │   │      │      │      │      │      │      │
+│ BT PRV   │ ⌃C   │      │⌥⌘V   │LOCAL │DOCS  │   │      │      │      │      │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │      │⌘⇧3   │⌘⇧4   │⌘⇧⌃4  │⌘⇧5   │   │      │      │      │      │      │      │
+│ BT NXT   │      │⌘⇧3   │⌘⇧4   │⌘⇧⌃4  │⌘⇧5   │   │      │      │      │      │      │      │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
-                                │BT PRV│BT NXT│   │ ▓▓▓  │ ▓▓▓  │
+                                │ ▓▓▓  │ ▓▓▓  │   │      │      │
                                 └──────┴──────┘   └──────┴──────┘
 ```
 
@@ -216,5 +217,8 @@ removed. What is left is only what this layer alone can do, so the right hand is
 
 | Trigger | Action |
 |---------|--------|
-| Both right thumbs (pos 50+51) | Momentary Layer 5 (Hotkeys) |
+| Both left thumbs (pos 48+49) | Momentary Layer 5 (Hotkeys) |
 | Q + P (pos 13+22) held | BT_CLR (clear current BT profile) |
+
+Because the left thumbs are ⌘ and ⇧, use the pinky Shift at position 24 or 35 for `⌘⇧`
+shortcuts. Squeezing both left thumbs together will drop you into Layer 5 instead.
