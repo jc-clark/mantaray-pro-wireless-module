@@ -177,15 +177,18 @@ Windows equivalent of Layer 1.
 
 ## Layer 5: Hotkeys (hold both right thumbs, positions 50+51)
 
+Everything reachable with the real ⌘ key, and everything duplicated on Layer 1, has been
+removed. What is left is only what this layer alone can do, so the right hand is empty.
+
 ```
 ┌──────────┬──────┬──────┬──────┬──────┬──────┐   ┌──────┬──────┬──────┬──────┬──────┬──────┐
 │          │BT0mac│BT1mac│BT2mac│BT3mac│BT4win│   │      │      │      │      │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│ ^1       │ ^2   │ ^3   │⌃⌘O   │⌃⌥⌘O  │⌃⌥⌘P  │   │      │ MUTE │ VOL- │ VOL+ │PL/PS │      │
+│ ^1       │ ^2   │ ^3   │⌃⌘O   │⌃⌥⌘O  │⌃⌥⌘P  │   │      │      │      │      │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │ ⌃C   │⌥⌘C   │⌥⌘V   │LOCAL │DOCS  │   │  ↑   │ ⌘K   │ ⌘W   │ ⌘T   │⌘⇧T   │ ⌘F   │
+│          │ ⌃C   │      │⌥⌘V   │LOCAL │DOCS  │   │      │      │      │      │      │      │
 ├──────────┼──────┼──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┼──────┼──────┤
-│          │      │⌘⇧3   │⌘⇧4   │⌘⇧⌃4  │⌘⇧5   │   │  ↓   │⌃⌥←   │⌃⌥↩   │⌃⌥C   │⌃⌥→   │ ⌘S   │
+│          │      │⌘⇧3   │⌘⇧4   │⌘⇧⌃4  │⌘⇧5   │   │      │      │      │      │      │      │
 └──────────┴──────┴──────┴──────┼──────┼──────┤   ├──────┼──────┼──────┴──────┴──────┴──────┘
                                 │BT PRV│BT NXT│   │ ▓▓▓  │ ▓▓▓  │
                                 └──────┴──────┘   └──────┴──────┘
@@ -197,7 +200,6 @@ Windows equivalent of Layer 1.
 * `⌃⌘O`   - Open Liquid reusable and variable (VS Code)
 * `⌃⌥⌘O`  - goer: Open in production (VS Code)
 * `⌃⌥⌘P`  - goer: Open in localhost:4000 (VS Code)
-* `⌥⌘C`   - Clipboard history (Alfred)
 * `⌥⌘V`   - Create Liquid reusable from relative path
 * `LOCAL` - Macro: Copy Relative Path → convert to localhost:4000 URL
 * `DOCS`  - Macro: Copy Relative Path → convert to docs.github.com URL
@@ -209,16 +211,6 @@ Windows equivalent of Layer 1.
 * `⌘⇧4`  - Screenshot selection
 * `⌘⇧⌃4` - Screenshot selection to clipboard
 * `⌘⇧5`  - Screenshot/recording toolbar
-* `MUTE` `VOL-` `VOL+` `PL/PS` - Media controls
-* `⌘W` - Close tab
-* `⌘T` - New tab
-* `⌘⇧T` - Reopen closed tab
-* `⌘F` - Find
-* `⌘S` - Save
-* `↑` `↓` - Arrow keys (for menu/autocomplete navigation)
-* `⌃⌥←` `⌃⌥→` - Rectangle: left/right half
-* `⌃⌥↩` - Rectangle: maximize
-* `⌃⌥C` - Rectangle: center
 
 ## Combos
 
