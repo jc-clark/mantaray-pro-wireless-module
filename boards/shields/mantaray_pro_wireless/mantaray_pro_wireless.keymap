@@ -82,9 +82,9 @@
         default_layer { // Layer 0 - Pine Mac
             display-name = "Pine Mac";
             bindings = <
-                &mt KP_EQUAL GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+                &mt LALT GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
                 &kp CAPS &kp Q &kp L &kp C &kp M &kp K   &kp SINGLE_QUOTE &kp F  &kp U     &kp O   &kp Y &kp BACKSLASH
-                &mt LSHIFT BACKSPACE &kp N &kp R &kp S &kp T &kp W   &kp P &kp H  &kp E &kp A &kp I &kp SEMICOLON
+                &mt LSHIFT BACKSPACE &kp N &kp R &kp S &kp T &kp W   &kp P &kp H  &kp E &kp A &kp I &mt RSHIFT SEMICOLON
                 &mt LCTRL TAB &kp J  &kp X &kp Z &kp G &kp V   &kp B &kp D  &kp COMMA &kp DOT &kp FSLH &kp ENTER
                 &mt LGUI ENTER &mt LSHIFT ESC &ltb 1 BACKSPACE &lt 2 SPACE 
             >;
@@ -115,9 +115,9 @@
         win_base_layer { // Layer 3 - Pine Win
             display-name = "Pine Win";
             bindings = <
-                &mt KP_EQUAL GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+                &mt LALT GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
                 &kp CAPS &kp Q &kp L &kp C &kp M &kp K   &kp SINGLE_QUOTE &kp F  &kp U     &kp O   &kp Y &kp BACKSLASH
-                &mt LSHIFT BACKSPACE &kp N &kp R &kp S &kp T &kp W   &kp P &kp H  &kp E &kp A &kp I &kp SEMICOLON
+                &mt LSHIFT BACKSPACE &kp N &kp R &kp S &kp T &kp W   &kp P &kp H  &kp E &kp A &kp I &mt RSHIFT SEMICOLON
                 &mt LGUI TAB &kp J  &kp X &kp Z &kp G &kp V   &kp B &kp D  &kp COMMA &kp DOT &kp FSLH &kp ENTER
                 &mt LCTRL ENTER &mt LSHIFT TAB &ltb 4 BACKSPACE &lt 2 SPACE 
             >;
